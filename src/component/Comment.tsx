@@ -1,14 +1,14 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import React, {  useEffect, useState } from "react";
+import React, {  ChangeEvent, useEffect, useState } from "react";
 
 const Comment = () => {
   const [comments, setComments] = useState<string[]>([]);
 
   const [newComment, setNewComment] = useState<string>("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
     setComments((prevComment) => [...prevComment, newComment]);
   };
@@ -16,7 +16,7 @@ const Comment = () => {
   useEffect(() => {
     const savedComment = JSON.parse(localStorage.getItem('comments')!)||[];
     setNewComment(savedComment);
-  }, []);
+  });
 
   useEffect(() => {
     const setComments = JSON.stringify(
