@@ -33,7 +33,7 @@ const Navbar = () => {
     <header
       className={`fixed top-0 w-full ${
         scrolled 
-          ? "bg-[#FF8000] opacity-75 text-[#163020] z-40 "
+          ? "bg-[#FF8000]  text-[#163020] z-50  "
           : "text-[#FF8000]"
       }`}
     >
@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
         <nav
           className={` ${
-            isMenu ? "xs:flex xs:flex-col mt-6 bg-[#FF8000] opacity-75 text-[#163020] z-40 w-full" : "xs:hidden"
+            isMenu ? "xs:flex xs:flex-col mt-6 bg-[#FF8000] opacity-85 text-[#163020] z-40 w-full py-10" : "xs:hidden"
           } gap-x-5 text-[20px] sm:flex-row  sm:flex justify-center items-center font-relway font-medium `}
         >
           <Link

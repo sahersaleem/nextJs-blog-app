@@ -16,8 +16,8 @@ interface ICard {
 
 const Card = ({ heading, shortDescription, imagePath , id }:ICard) => {
   return (
-    <div className="w-auto  p-2 border-[#163020] border-[4px]  rounded-xl flex flex-col justify-center items-center gap-3 text-black font-relway max-w-md">
-      <h2 className="text-xl font-medium">{heading}</h2>
+    <div className="w-auto h-[600px]  border-[#163020] border-[4px]  rounded-xl flex flex-col justify-center items-center gap-3 text-black font-relway max-w-md p-10">
+      <h2 className="text-xl font-medium text-center">{heading}</h2>
       <Image
         src={imagePath}
         alt="image"

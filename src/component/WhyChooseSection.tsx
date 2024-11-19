@@ -14,7 +14,7 @@ const FeaturesCard = ({imgUrl , heading,para}:IFeaturesCard) => {
     <div className="max-w-sm w-[300px] flex justify-center items-center flex-col border-[3px]  hover:border-green-400 p-6 transition-all 0.3s ease-in-out hover:animate-pulse">
       <Image src={imgUrl} width={200} height={100} alt="image" className="w-[200px]  h-[200px] object-cover object-center"/>
 
-      <div className="text-center">
+      <div className="text-center mt-6">
         <h1 className="font-bold">{heading}</h1>
         <p className="text-center">{para}</p>
       </div>
@@ -32,8 +32,8 @@ const WhyChooseSection = () => {
   return (
     <div className=" relative xs:h-auto xs:pb-16 lg:pb-0 lg:h-screen w-full bg-[url(/images/image.png)] bg-cover bg-center text-white font-relway  ">
       <div className="inset-0 absolute bg-[#163020] opacity-95 shadow-xl "></div>
-      <div className="relative z-40 flex justify-center flex-col gap-16 ">
-        <div className="xs:space-y-7 lg:space-x-0">
+      <div className="relative z-30 flex justify-center flex-col gap-16 ">
+        <div className="xs:space-y-7 lg:space-x-0 ">
           <h1 className=" xs:text-3xl lg:text-5xl text-[#FF8000] font-bold mt-20 text-center leading-normal">
           Where Wanderlust Meets Expertise
           </h1>
