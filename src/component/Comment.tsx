@@ -16,7 +16,7 @@ const Comment = () => {
   useEffect(() => {
     const savedComment = JSON.parse(localStorage.getItem('comments')!)||[];
     setNewComment(savedComment);
-  });
+  },[]);
 
   useEffect(() => {
     const setComments = JSON.stringify(
