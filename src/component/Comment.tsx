@@ -8,7 +8,7 @@ const Comment = () => {
 
   const [newComment, setNewComment] = useState<string>("");
 
-  const handleSubmit = (e:ChangeEvent<HTMLFormElement>) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     setComments((prevComment) => [...prevComment, newComment]);
   };
